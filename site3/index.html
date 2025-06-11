@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acesso Restrito</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #000;
+            color: #FF4136; /* Cor de alerta */
+            font-family: 'VT323', monospace;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            overflow: hidden;
+            cursor: default;
+        }
+        .container {
+            text-align: center;
+            border: 2px solid #FF4136;
+            padding: 40px;
+            box-shadow: 0 0 20px #FF4136;
+        }
+        h1 {
+            font-size: 3em;
+            margin: 0;
+        }
+        p {
+            font-size: 1.5em;
+        }
+        #access-button {
+            font-family: 'VT323', monospace;
+            font-size: 1.5em;
+            background-color: #FF4136;
+            color: #000;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            margin-top: 20px;
+            transition: background-color 0.3s;
+        }
+        #access-button:hover {
+            background-color: #fff;
+        }
+        #rick-roll-container {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container" id="lure-container">
+        <h1>ÁREA RESTRITA</h1>
+        <p>AUTENTICAÇÃO NECESSÁRIA</p>
+        <button id="access-button">[ INICIAR PROTOCOLO ]</button>
+    </div>
+    
+    <div id="rick-roll-container">
+        <iframe 
+            width="100%" 
+            height="100%" 
+            src="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1&rel=0&controls=0" 
+            title="YouTube video player" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            allowfullscreen>
+        </iframe>
+    </div>
+
+    <script>
+    // Pega o botão
+    const accessButton = document.getElementById('access-button');
+    
+    // A URL do vídeo com autoplay
+    const rickRollUrl = 'https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1&rel=0&controls=0';
+
+    // Adiciona o "ouvinte" para o evento de clique
+    accessButton.addEventListener('click', () => {
+        // A mágica acontece aqui: em vez de mostrar um iframe,
+        // nós simplesmente mudamos o endereço da página atual.
+        window.location.href = rickRollUrl;
+    });
+</script>

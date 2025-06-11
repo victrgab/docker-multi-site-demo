@@ -1,0 +1,26 @@
+# A linha 'version' é obsoleta, pode ser removida
+services:
+  site1:
+    image: nginx:alpine
+    volumes:
+      - ./site1:/usr/share/nginx/html:ro
+    ports:
+      - "8080:80"
+    restart: unless-stopped
+
+  site2:
+    image: nginx:alpine
+    volumes:
+      - ./site2:/usr/share/nginx/html:ro
+    ports:
+      - "8081:80"
+    restart: unless-stopped
+
+  # O nosso serviço surpresa
+  site3:
+    image: nginx:alpine
+    volumes:
+      - ./site3:/usr/share/nginx/html:ro
+    ports:
+      - "8082:80" # Usando a próxima porta livre
+    restart: unless-stopped

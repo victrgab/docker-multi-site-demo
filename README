@@ -1,0 +1,60 @@
+# Projeto de Demonstração Docker: Multi-Site com NGINX
+
+Este projeto de Engenharia de Software demonstra a utilização do Docker e Docker Compose para orquestrar múltiplos serviços web (NGINX) de forma isolada em um mesmo ambiente.
+
+O projeto consiste em três sites independentes, cada um servido por seu próprio contêiner NGINX e acessível em uma porta diferente no `localhost`.
+
+## ✨ Tecnologias Utilizadas
+
+- **Containerização:** Docker & Docker Compose
+- **Servidor Web:** NGINX (usando a imagem `nginx:alpine`)
+- **HTML/CSS/JavaScript:** Para as páginas de demonstração.
+
+## 🚀 Funcionalidades
+
+O `docker-compose.yml` orquestra três serviços:
+
+1.  **`site1`**: Um site de sucesso com uma animação em CSS.
+    - Acessível em: `http://localhost:8080`
+    - Conteúdo servido da pasta: `./site1`
+
+2.  **`site2`**: Um segundo site de sucesso, com animação e estilo diferentes para demonstrar o isolamento.
+    - Acessível em: `http://localhost:8081`
+    - Conteúdo servido da pasta: `./site2`
+
+3.  **`site3` (Easter Egg)**: Um serviço "secreto" que demonstra o redirecionamento e a interação com o usuário.
+    - Acessível em: `http://localhost:8082`
+    - Conteúdo servido da pasta: `./site3`
+
+## ⚙️ Como Executar o Projeto
+
+**Pré-requisitos:** Você precisa ter o **Docker** e o **Docker Compose** instalados e em execução.
+
+1.  **Clone o repositório (ou baixe os arquivos):**
+    ```bash
+    git clone [https://github.com/SEU_USUARIO/NOME_DO_REPOSITORIO.git](https://github.com/SEU_USUARIO/NOME_DO_REPOSITORIO.git)
+    cd NOME_DO_REPOSITORIO
+    ```
+
+2.  **Inicie todos os serviços com o Docker Compose:**
+    ```bash
+    docker compose up -d
+    ```
+
+3.  **Acesse os sites no seu navegador:**
+    - `http://localhost:8080`
+    - `http://localhost:8081`
+    - `http://localhost:8082`
+
+Para parar todos os serviços, execute `docker compose down`.
+
+## 📂 Estrutura de Diretórios
+
+├── site1/
+│   └── index.html
+├── site2/
+│   └── index.html
+├── site3/
+│   └── index.html
+├── docker-compose.yml
+└── README.md
