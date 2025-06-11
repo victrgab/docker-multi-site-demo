@@ -1,60 +1,67 @@
-# Projeto de Demonstração Docker: Multi-Site com NGINX
+# Projeto Docker: Orquestração Multi-Site com NGINX
 
-Este projeto de Engenharia de Software demonstra a utilização do Docker e Docker Compose para orquestrar múltiplos serviços web (NGINX) de forma isolada em um mesmo ambiente.
-
-O projeto consiste em três sites independentes, cada um servido por seu próprio contêiner NGINX e acessível em uma porta diferente no `localhost`.
+Este repositório é um projeto acadêmico para a disciplina de Engenharia de Software, demonstrando a orquestração de múltiplos serviços web isolados utilizando Docker e Docker Compose.
 
 ## ✨ Tecnologias Utilizadas
 
 - **Containerização:** Docker & Docker Compose
-- **Servidor Web:** NGINX (usando a imagem `nginx:alpine`)
-- **HTML/CSS/JavaScript:** Para as páginas de demonstração.
+- **Servidor Web:** NGINX (`nginx:alpine`)
+- **Frontend:** HTML5, CSS3, JavaScript
 
-## 🚀 Funcionalidades
+## 🚀 O Projeto
 
-O `docker-compose.yml` orquestra três serviços:
+O ambiente é composto por três sites independentes, cada um servido por seu próprio contêiner NGINX, demonstrando o conceito de isolamento de serviços:
 
-1.  **`site1`**: Um site de sucesso com uma animação em CSS.
-    - Acessível em: `http://localhost:8080`
-    - Conteúdo servido da pasta: `./site1`
+1.  **Site 1**: Uma página de sucesso com uma animação de confirmação (Verde).
+2.  **Site 2**: Uma segunda página de sucesso com estilo e cor diferentes (Azul) para reforçar a independência dos serviços.
+3.  **Site 3**: Um serviço "secreto" que serve como um *Easter Egg*.
 
-2.  **`site2`**: Um segundo site de sucesso, com animação e estilo diferentes para demonstrar o isolamento.
-    - Acessível em: `http://localhost:8081`
-    - Conteúdo servido da pasta: `./site2`
+---
 
-3.  **`site3` (Easter Egg)**: Um serviço "secreto" que demonstra o redirecionamento e a interação com o usuário.
-    - Acessível em: `http://localhost:8082`
-    - Conteúdo servido da pasta: `./site3`
+## 📂 Estrutura de Diretórios
+
+A estrutura do projeto é organizada para que cada serviço tenha seus próprios arquivos de frontend de forma clara.
+
+.
+├── site1/
+│   └── index.html      # Página de sucesso do Site 1 (Verde)
+├── site2/
+│   └── index.html      # Página de sucesso do Site 2 (Azul)
+├── site3/
+│   └── index.html      # Página "Easter Egg" (A Surpresa!)
+├── .gitignore          # Arquivo para o Git ignorar itens desnecessários
+├── docker-compose.yml  # Arquivo "maestro" que orquestra todos os serviços
+└── README.md           # Esta documentação
+
+
+---
 
 ## ⚙️ Como Executar o Projeto
 
-**Pré-requisitos:** Você precisa ter o **Docker** e o **Docker Compose** instalados e em execução.
+**Pré-requisitos:** Docker e Docker Compose instalados e em execução.
 
-1.  **Clone o repositório (ou baixe os arquivos):**
+1.  **Clone o repositório:**
     ```bash
-    git clone [https://github.com/SEU_USUARIO/NOME_DO_REPOSITORIO.git](https://github.com/SEU_USUARIO/NOME_DO_REPOSITORIO.git)
-    cd NOME_DO_REPOSITORIO
+    git clone [URL_DO_SEU_REPOSITORIO]
+    cd [NOME_DO_REPOSITORIO]
     ```
 
-2.  **Inicie todos os serviços com o Docker Compose:**
+2.  **Inicie os contêineres em segundo plano:**
     ```bash
     docker compose up -d
     ```
 
-3.  **Acesse os sites no seu navegador:**
-    - `http://localhost:8080`
-    - `http://localhost:8081`
-    - `http://localhost:8082`
+3.  **Para parar e remover todos os contêineres:**
+    ```bash
+    docker compose down
+    ```
 
-Para parar todos os serviços, execute `docker compose down`.
+---
 
-## 📂 Estrutura de Diretórios
+## 🌐 Acessando os Serviços
 
-├── site1/
-│   └── index.html
-├── site2/
-│   └── index.html
-├── site3/
-│   └── index.html
-├── docker-compose.yml
-└── README.md
+Após iniciar os contêineres, os sites estarão disponíveis nos seguintes endereços:
+
+- **Site 1:** [http://localhost:8080](http://localhost:8080)
+- **Site 2:** [http://localhost:8081](http://localhost:8081)
+- **Site 3 (A Surpresa):** [http://localhost:8082](http://localhost:8082)

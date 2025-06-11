@@ -79,16 +79,12 @@
     </div>
 
     <script>
-    // Pega o botão
     const accessButton = document.getElementById('access-button');
     
-    // A URL do vídeo com autoplay
     const rickRollUrl = 'https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1&rel=0&controls=0';
 
-    // Adiciona o "ouvinte" para o evento de clique
     accessButton.addEventListener('click', () => {
-        // A mágica acontece aqui: em vez de mostrar um iframe,
-        // nós simplesmente mudamos o endereço da página atual.
+
         window.location.href = rickRollUrl;
     });
 </script>
