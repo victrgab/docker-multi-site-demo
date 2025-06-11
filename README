@@ -41,8 +41,8 @@ A estrutura do projeto é organizada para que cada serviço tenha seus próprios
 
 1.  **Clone o repositório:**
     ```bash
-    git clone [URL_DO_SEU_REPOSITORIO]
-    cd [NOME_DO_REPOSITORIO]
+    git clone https://github.com/victrgab/docker-multi-site-demo.git
+    cd docker-multi-site-demo
     ```
 
 2.  **Inicie os contêineres em segundo plano:**
