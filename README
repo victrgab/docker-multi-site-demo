@@ -1,14 +1,14 @@
-# Projeto Docker: Orquestração Multi-Site com NGINX
+Projeto Docker: Orquestração Multi-Site com NGINX
 
 Este repositório é um projeto acadêmico para a disciplina de Engenharia de Software, demonstrando a orquestração de múltiplos serviços web isolados utilizando Docker e Docker Compose.
 
-## ✨ Tecnologias Utilizadas
+✨ Tecnologias Utilizadas
 
 - **Containerização:** Docker & Docker Compose
 - **Servidor Web:** NGINX (`nginx:alpine`)
 - **Frontend:** HTML5, CSS3, JavaScript
 
-## 👨‍💻 Equipe / Autores
+👨‍💻 Equipe / Autores
 
 Este projeto foi desenvolvido como parte da disciplina de Engenharia de Software pelos seguintes membros:
 
@@ -21,7 +21,7 @@ Este projeto foi desenvolvido como parte da disciplina de Engenharia de Software
 
 ---
 
-## 🚀 O Projeto
+🚀 O Projeto
 
 O ambiente é composto por três sites independentes, cada um servido por seu próprio contêiner NGINX, demonstrando o conceito de isolamento de serviços:
 
@@ -31,7 +31,7 @@ O ambiente é composto por três sites independentes, cada um servido por seu pr
 
 ---
 
-## 📂 Estrutura de Diretórios
+📂 Estrutura de Diretórios
 
 A estrutura do projeto é organizada para que cada serviço tenha seus próprios arquivos de frontend de forma clara.
 ```
@@ -48,7 +48,7 @@ A estrutura do projeto é organizada para que cada serviço tenha seus próprios
 ```
 ---
 
-## ⚙️ Como Executar o Projeto
+⚙️ Como Executar o Projeto
 
 **Pré-requisitos:** Docker e Docker Compose instalados e em execução.
 
@@ -70,7 +70,7 @@ A estrutura do projeto é organizada para que cada serviço tenha seus próprios
 
 ---
 
-## 🌐 Acessando os Serviços
+🌐 Acessando os Serviços
 
 Após iniciar os contêineres, os sites estarão disponíveis nos seguintes endereços:
 
