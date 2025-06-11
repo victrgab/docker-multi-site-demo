@@ -8,6 +8,19 @@ Este repositório é um projeto acadêmico para a disciplina de Engenharia de So
 - **Servidor Web:** NGINX (`nginx:alpine`)
 - **Frontend:** HTML5, CSS3, JavaScript
 
+## 👨‍💻 Equipe / Autores
+
+Este projeto foi desenvolvido como parte da disciplina de Engenharia de Software pelos seguintes membros:
+
+* **Victor Gabriel de Oliveira Brito** - (https://github.com/victrgab)
+* **Pablo Caldeira Gomes Monteiro** - (https://github.com/PabloCGM)
+* **Walter Lucas Barros da Conceição** - (https://github.com/wluca1)
+* **João Marcos R C Marques** - (https://github.com/JoaoRCM653)
+* **João Gabriel Silva de Melo** - (https://github.com/sopadmakc0)
+* **Enzo Kauê Batista Ferreira** - (https://github.com/EnzoKaue)
+
+---
+
 ## 🚀 O Projeto
 
 O ambiente é composto por três sites independentes, cada um servido por seu próprio contêiner NGINX, demonstrando o conceito de isolamento de serviços:
