@@ -1,12 +1,29 @@
-# Projeto Docker: Orquestração Multi-Site com NGINX
+# 🐳 Projeto Docker: Orquestração Multi-Site com NGINX
 
-Este repositório é um projeto acadêmico para a disciplina de Engenharia de Software, demonstrando a orquestração de múltiplos serviços web isolados utilizando Docker e Docker Compose.
+Este repositório é um projeto acadêmico para a disciplina de **Engenharia de Software**, demonstrando a orquestração de múltiplos serviços web isolados utilizando **Docker** e **Docker Compose**.
+
+---
 
 ## ✨ Tecnologias Utilizadas
 
-- **Containerização:** Docker & Docker Compose
-- **Servidor Web:** NGINX (`nginx:alpine`)
-- **Frontend:** HTML5, CSS3, JavaScript
+- **Containerização:** Docker & Docker Compose  
+- **Servidor Web:** NGINX (`nginx:alpine`)  
+- **Frontend:** HTML5, CSS3, JavaScript  
+
+---
+
+## 👨‍💻 Equipe / Autores
+
+Este projeto foi desenvolvido por:
+
+- [**Victor Gabriel de Oliveira Brito**](https://github.com/victrgab)  
+- [**Pablo Caldeira Gomes Monteiro**](https://github.com/PabloCGM)  
+- [**Walter Lucas Barros da Conceição**](https://github.com/wluca1)  
+- [**João Marcos R C Marques**](https://github.com/JoaoRCM653)  
+- [**João Gabriel Silva de Melo**](https://github.com/sopadmakc0)  
+- [**Enzo Kauê Batista Ferreira**](https://github.com/EnzoKaue)  
+
+---
 
 ## 🚀 O Projeto
 
@@ -41,8 +58,8 @@ A estrutura do projeto é organizada para que cada serviço tenha seus próprios
 
 1.  **Clone o repositório:**
     ```bash
-    git clone [URL_DO_SEU_REPOSITORIO]
-    cd [NOME_DO_REPOSITORIO]
+    git clone https://github.com/victrgab/docker-multi-site-demo.git
+    cd docker-multi-site-demo
     ```
 
 2.  **Inicie os contêineres em segundo plano:**
