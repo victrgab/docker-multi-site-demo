@@ -13,7 +13,7 @@ Este repositório é um projeto acadêmico para a disciplina de Engenharia de So
 O ambiente é composto por três sites independentes, cada um servido por seu próprio contêiner NGINX, demonstrando o conceito de isolamento de serviços:
 
 1.  **Site 1**: Uma página de sucesso com uma animação de confirmação (Verde).
-2.  **Site 2**: Uma segunda página de sucesso com estilo e cor diferentes (Azul) para reforçar a independência dos serviços.
+2.  **Site 2**: Uma segunda página de sucesso com estilo e cor diferentes (Azul).
 3.  **Site 3**: Um serviço "secreto" que serve como um *Easter Egg*.
 
 ---
@@ -21,7 +21,7 @@ O ambiente é composto por três sites independentes, cada um servido por seu pr
 ## 📂 Estrutura de Diretórios
 
 A estrutura do projeto é organizada para que cada serviço tenha seus próprios arquivos de frontend de forma clara.
-
+```
 .
 ├── site1/
 │   └── index.html      # Página de sucesso do Site 1 (Verde)
@@ -32,8 +32,7 @@ A estrutura do projeto é organizada para que cada serviço tenha seus próprios
 ├── .gitignore          # Arquivo para o Git ignorar itens desnecessários
 ├── docker-compose.yml  # Arquivo "maestro" que orquestra todos os serviços
 └── README.md           # Esta documentação
-
-
+```
 ---
 
 ## ⚙️ Como Executar o Projeto
